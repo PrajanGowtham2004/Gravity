@@ -1,10 +1,15 @@
 import React from 'react'
-import Home from './Component/Home'
+import Navbar from './Component/Common/Navbar'
+import About from './Component/Common/About'
+import Contact from './Component/Common/Contact'
 
 const App = () => {
   return (
     <>
-  <Home/>
+  <Navbar/>
+  <About/>
+  <Contact/>
+
     </>
   )
 }
