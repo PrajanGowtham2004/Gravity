@@ -1,15 +1,10 @@
-import React from 'react'
-import Navbar from './Component/Common/Navbar'
-import About from './Component/Common/About'
-import Contact from './Component/Common/Contact'
+import Home from './Component/Student/Home'
+import Register from './Component/Common/Register'
 
 const App = () => {
   return (
     <>
-  <Navbar/>
-  <About/>
-  <Contact/>
-
+    <Home/>
     </>
   )
 }
