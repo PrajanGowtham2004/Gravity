@@ -1,6 +1,12 @@
 import React from 'react'
 
 const Footer = () => {
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  }
   return (
     <>
     <div className="footer flex flex-col gap-2 bg-blue-950 text-white">
@@ -17,13 +23,13 @@ const Footer = () => {
 
       <div className="quicklinks p-15 ">
         <h3><b><u>Quick Links</u></b></h3>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Attendance</li>
-          <li>Marks</li>
-          <li>Remarks</li>
+        <ul className='cursor-pointer flex flex-col'>
+          <button onClick={()=>scrollToSection(Homeref)}>Home</button>
+          <button onClick={()=>scrollToSection(Aboutref)}>About</button>
+          <button onClick={()=>scrollToSection(Contactref)}>Contact</button>
+          <button>Attendance</button>
+          <button>Marks</button>
+          <button>Remarks</button>
         </ul>
       </div>
       

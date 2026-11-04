@@ -3,18 +3,11 @@ import Navbar from '../Common/Navbar'
 
 import {useRef} from 'react'
 
-const Contact = () => {
-  const Contactref = useRef(null)
-  const scrollToSection = (sectionRef) =>{
-    sectionRef.current.scrollIntoView({
-            behavior: "smooth"
-      });
-  }
-
+const Contact = ({Contactref}) => {
   return (
     <>
     <div ref={Contactref} className="contactmain flex flex-wrap flex-col gap-5 p-5">
-      <div className="contactus text-center ">
+      <div className="contactus text-center opacity-50">
         <b><i>Contact us:</i></b>
       </div>
       <div className="con flex flex-wrap flex-row gap-10 justify-center items-center">

@@ -12,18 +12,14 @@ const Home = () => {
   const Homeref = useRef(null)
   const Aboutref = useRef(null)
   const Contactref = useRef(null)
-
-  const scrollToSection = (sectionRef) =>{
-    sectionRef.current.scrollIntoView({
-            behavior: "smooth"
-      });
-  }
   return (
     <>
-  <Navbar/>
-  <About/>
-  <Contact/>
-  <Footer/>
+    
+  <Navbar Homeref={Homeref} Aboutref={Aboutref} Contactref={Contactref} />
+  <About Homeref={Homeref} Aboutref={Aboutref} />
+  <Contact Contactref={Contactref}/>
+  <Footer />
+
 
     </>
   )

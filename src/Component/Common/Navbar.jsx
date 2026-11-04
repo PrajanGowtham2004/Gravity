@@ -2,18 +2,14 @@ import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import { useRef } from 'react'
 
-const Navbar = () => {
-  const Homeref = useRef(null)
-  const Aboutref = useRef(null)
-  const Contactref = useRef(null)
+const Navbar = ({ Homeref, Aboutref, Contactref }) => {
 
-  const scrollToSection = (sectionRef) =>{
-    sectionRef.current.scrollIntoView({
-            behavior: "smooth"
-      });
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
   }
-
-
 
 
   return (
