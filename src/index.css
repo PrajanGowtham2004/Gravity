@@ -570,3 +570,85 @@ td {
   transform: scale(1.02);
   box-shadow: 0 25px 50px -12px rgb(23 37 84 / 30%);
 }
+
+
+
+/* Login and Register Responsive Styling */
+
+/* Main page containers */
+.log,
+.reg {
+  min-height: 100vh;
+  height: auto;
+  padding: 30px 16px;
+  box-sizing: border-box;
+}
+
+/* Login and Register form cards */
+.loginform,
+.rgiesterform {
+  width: min(100%, 24rem);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Inputs, select and submit buttons */
+.loginform input,
+.rgiesterform input,
+.rgiesterform select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+  .log,
+  .reg {
+    padding: 24px 16px;
+  }
+
+  .loginform,
+  .rgiesterform {
+    padding: 28px 24px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .log,
+  .reg {
+    padding: 20px 12px;
+  }
+
+  .loginform,
+  .rgiesterform {
+    width: 100%;
+    padding: 24px 18px;
+    gap: 14px;
+  }
+
+  .loginform h2,
+  .rgiesterform h2 {
+    font-size: 22px;
+  }
+
+  .loginform p,
+  .rgiesterform p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 360px) {
+  .loginform,
+  .rgiesterform {
+    padding: 20px 14px;
+  }
+
+  .loginform h2,
+  .rgiesterform h2 {
+    font-size: 20px;
+  }
+}
